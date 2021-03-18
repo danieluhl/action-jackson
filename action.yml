@@ -1,11 +1,11 @@
 name: publish page
 description: does the thing
 inputs:
-  build-dir:
+  build_dir:
     description: output directory
     required: false
     default: dist
-  target-dir:
+  target_dir:
     description: deploy directory
     required: false
     default: docs
@@ -14,5 +14,5 @@ runs:
   using: docker
   image: Dockerfile
   env:
-    BUILD_DIR: ${{ inputs.build-dir }}
-    TARGET_DIR: ${{ inputs.target-dir }}
+    BUILD_DIR: ${{ inputs.build_dir }}
+    TARGET_DIR: ${{ inputs.target_dir }}

@@ -7,4 +7,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          build-dir: der
+          build_dir: der
